@@ -1,4 +1,4 @@
-Data Package of Nationally Determined Contributions (NDCs) and Intended Nationally Determined Contributions (INDCs) as provided in the UNFCCC secreteriat's registries.
+Data Package with Nationally Determined Contributions (NDCs) and Intended Nationally Determined Contributions (INDCs) as provided in the UNFCCC secreteriat's registries.
 Contains only the main document using an English version if multiple are available.
 
 ## Data
@@ -6,9 +6,9 @@ Contains only the main document using an English version if multiple are availab
 NDCs are pre-processed in the
 NDC Data Package (https://github.com/openclimatedata/ndcs) and INDCs in the
 INDC Data Package (https://github.com/openclimatedata/indcs).
-This Data Package only contains one document per party.
-For convenience all documents are downloaded and saved with
-unified filenames in the `pdfs` directory.
+This Data Package only contains one document per party, the main NDC or INDC
+document. For convenience all documents are copied with unified filenames
+in the `pdfs` directory.
 
 ## Preparation
 
