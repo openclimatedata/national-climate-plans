@@ -1,0 +1,6 @@
+[submodule "cache/ndcs"]
+	path = cache/ndcs
+	url = https://github.com/openclimatedata/ndcs
+[submodule "cache/indcs"]
+	path = cache/indcs
+	url = https://github.com/openclimatedata/indcs

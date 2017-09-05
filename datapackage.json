@@ -1,0 +1,66 @@
+{
+  "resources": [
+    {
+      "name": "nationally-determined-contributions",
+      "path": "data/nationally-determined-contributions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Code",
+            "type": "string",
+            "description": "ISO3 code of Party, EUU for European Union"
+          },
+          {
+            "name": "Party",
+            "type": "string",
+            "description": "Name of Party"
+          },
+          {
+            "name": "Kind",
+            "type": "string",
+            "description": "Kind of document (INDC, NDC)"
+          },
+          {
+            "name": "Language",
+            "type": "string",
+            "description": "Document language"
+          },
+          {
+            "name": "Filename",
+            "type": "string",
+            "description": "Unified filename"
+          },
+          {
+            "name": "SubmissionDate",
+            "type": "date",
+            "description": "Date of submission"
+          },
+          {
+            "name": "EncodedAbsUrl",
+            "type": "string",
+            "description": "URL of original document"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "nationally-determined-contributions",
+  "title": "(Intended) Nationally Determined Contributions",
+  "description": "(Intended) Nationally Determined Contributions as provided in the UNFCCC registries, containing only the main document and using the English version if multiple are available.",
+  "sources": [
+    {
+      "name": "Interim NDC Registry",
+      "web": "http://www4.unfccc.int/ndcregistry/Pages/Home.aspx"
+    },
+    {
+      "name": "UNFCCC NDC Registry",
+      "web": "http://unfccc.int/focus/ndc_registry/items/9433.php"
+    },
+    {
+      "web": "http://www4.unfccc.int/submissions/indc/Submission%20Pages/submissions.aspx",
+      "name": "UNFCCC website with INDCs as submitted by Parties"
+    }
+  ]
+}
