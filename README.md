@@ -12,6 +12,10 @@ in the `pdfs` directory.
 
 ## Preparation
 
+Clone this repository with
+
+  git clone https://github.com/openclimatedata/nationally-determined-contributions.git  --recursive
+
 Run
 
     make
