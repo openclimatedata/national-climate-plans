@@ -14,7 +14,7 @@ in the `pdfs` directory.
 
 Clone this repository with
 
-  git clone https://github.com/openclimatedata/nationally-determined-contributions.git  --recursive
+    git clone https://github.com/openclimatedata/nationally-determined-contributions.git  --recursive
 
 Run
 
