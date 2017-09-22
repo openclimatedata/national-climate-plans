@@ -51,16 +51,16 @@
   "description": "(Intended) Nationally Determined Contributions as provided in the UNFCCC registries, containing only the main document and using the English version if multiple are available.",
   "sources": [
     {
-      "name": "Interim NDC Registry",
+      "title": "Interim NDC Registry",
       "web": "http://www4.unfccc.int/ndcregistry/Pages/Home.aspx"
     },
     {
-      "name": "UNFCCC NDC Registry",
+      "title": "UNFCCC NDC Registry",
       "web": "http://unfccc.int/focus/ndc_registry/items/9433.php"
     },
     {
       "web": "http://www4.unfccc.int/submissions/indc/Submission%20Pages/submissions.aspx",
-      "name": "UNFCCC website with INDCs as submitted by Parties"
+      "title": "UNFCCC website with INDCs as submitted by Parties"
     }
   ]
 }
