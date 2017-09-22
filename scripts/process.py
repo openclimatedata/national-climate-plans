@@ -33,9 +33,6 @@ ndcs = ndcs.set_index("Code")
 ndcs = ndcs.sort_values(
     ["Party", "Language", "FileType"])[~ndcs.index.duplicated(keep='first')]
 
-# Number of entries currently listed in NDC registry.
-assert len(ndcs) == 155
-
 # Remove individual EU countries, ignoring errors for parties not yet
 # having ratified Paris Agreement.
 ndcs = ndcs.drop(eu28, errors="ignore")
