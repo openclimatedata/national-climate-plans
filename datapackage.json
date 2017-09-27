@@ -42,7 +42,8 @@
             "type": "string",
             "description": "URL of original document"
           }
-        ]
+        ],
+        "primaryKey": "Code"
       }
     }
   ],
