@@ -39,6 +39,9 @@ ndcs = ndcs.drop(eu28, errors="ignore")
 
 ndcs["Kind"] = ndcs["Number"] + " NDC"
 
+# Convert to full date for joining with INDC table.
+ndcs.SubmissionDate = pd.to_datetime(ndcs.SubmissionDate)
+
 # INDCs
 indcs = read_datapackage(indcs_path)
 
