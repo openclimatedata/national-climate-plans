@@ -2,7 +2,7 @@ import glob
 import os
 import pandas as pd
 
-from countrygroups import EUROPEAN_UNION as eu28
+from countrygroups import EUROPEAN_UNION as eu
 from shutil import copyfile
 from pandas_datapackage_reader import read_datapackage
 from pathlib import Path
@@ -29,13 +29,16 @@ ndcs['FileType'] = pd.Categorical(
 
 ndcs = ndcs.set_index("Code")
 
+# Remove individual EU countries, except France which submitted a NDC for
+# "pays et territoires d'outre-mer"
+eu.remove("FRA")
+ndcs = ndcs[~(ndcs.Title == "EU First NDC")]
+ndcs = ndcs.drop(eu)  # Some don't have the above title.
+
 # Give preference to English version if available.
 ndcs = ndcs.sort_values(
     ["Party", "Language", "FileType"])[~ndcs.index.duplicated(keep='first')]
 
-# Remove individual EU countries, ignoring errors for parties not yet
-# having ratified Paris Agreement.
-ndcs = ndcs.drop(eu28, errors="ignore")
 
 ndcs["Kind"] = ndcs["Number"] + " NDC"
 

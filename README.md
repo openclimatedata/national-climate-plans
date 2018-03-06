@@ -10,6 +10,9 @@ This Data Package only contains one document per party, the main NDC or INDC
 document. For convenience all documents are copied with unified filenames
 in the `pdfs` directory.
 
+The EU is listed with code "EUU", for France its NDC for overseas territories
+is included with code "FRA".
+
 ## Preparation
 
 Clone this repository with
