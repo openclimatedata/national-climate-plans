@@ -14,4 +14,4 @@ clean:
 	rm -rf data/*.csv
 	rm -rf pdfs/*.pdf
 
-.PHONY: clean download
+.PHONY: clean
