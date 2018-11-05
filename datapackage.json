@@ -1,8 +1,8 @@
 {
   "resources": [
     {
-      "name": "nationally-determined-contributions",
-      "path": "data/nationally-determined-contributions.csv",
+      "name": "national-climate-plans",
+      "path": "data/national-climate-plans.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "schema": {
@@ -47,8 +47,8 @@
       }
     }
   ],
-  "name": "nationally-determined-contributions",
-  "title": "(Intended) Nationally Determined Contributions",
+  "name": "national-climate-plans",
+  "title": "National Climate Plans: (Intended) Nationally Determined Contributions",
   "description": "(Intended) Nationally Determined Contributions as provided in the UNFCCC registries, containing only the main document and using the English version if multiple are available",
   "sources": [
     {

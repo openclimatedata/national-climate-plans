@@ -1,4 +1,4 @@
-Data Package with Nationally Determined Contributions (NDCs) and Intended Nationally Determined Contributions (INDCs) as provided in the UNFCCC secreteriat's registries.
+Data Package with National Climate Plans from Nationally Determined Contributions (NDCs) and Intended Nationally Determined Contributions (INDCs) as provided in the UNFCCC secreteriat's registries.
 Contains only the main document using an English version if multiple are available.
 
 ## Data
@@ -17,7 +17,7 @@ is included with code "FRA".
 
 Clone this repository with
 
-    git clone https://github.com/openclimatedata/nationally-determined-contributions.git  --recursive
+    git clone https://github.com/openclimatedata/national-climate-plans.git  --recursive
 
 Run
 

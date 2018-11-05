@@ -84,7 +84,7 @@ latest = latest.sort_values("Party")
 
 latest.SubmissionDate = latest.SubmissionDate.dt.date
 
-latest.to_csv(root / "data/nationally-determined-contributions.csv")
+latest.to_csv(root / "data/national-climate-plans.csv")
 
 if not latest_pdfs_path.exists():
     latest_pdfs_path.mkdir()
