@@ -33,7 +33,7 @@ ndcs = ndcs.set_index("Code")
 # "pays et territoires d'outre-mer"
 eu.remove("FRA")
 ndcs = ndcs[~(ndcs.Title == "EU First NDC")]
-ndcs = ndcs.drop(eu)  # Some don't have the above title.
+ndcs = ndcs.drop(eu, errors="ignore")  # Some don't have the above title.
 
 # Give preference to English version if available.
 ndcs = ndcs.sort_values(
