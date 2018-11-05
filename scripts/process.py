@@ -69,7 +69,7 @@ assert len(indcs) == 165
 
 # Combined list, with NDC or INDC if no NDC available yet
 
-latest = pd.concat([ndcs, indcs])
+latest = pd.concat([ndcs, indcs], sort=False)
 latest = latest[~latest.index.duplicated(keep='first')]
 
 latest = latest[[
