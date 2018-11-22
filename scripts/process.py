@@ -16,6 +16,11 @@ latest_pdfs_path = root /  "pdfs"
 # NDCs
 ndcs = read_datapackage(ndcs_path)
 
+ndcs["Kind"] = ndcs["Number"] + " NDC"
+
+# Enable categorical sorting for NDC version.
+ndcs["Number"] = pd.Categorical(ndcs["Number"], ["Second", "First"])
+
 # Enable categorical sorting for language.
 ndcs['Language'] = pd.Categorical(
     ndcs['Language'],
@@ -37,10 +42,7 @@ ndcs = ndcs.drop(eu, errors="ignore")  # Some don't have the above title.
 
 # Give preference to English version if available.
 ndcs = ndcs.sort_values(
-    ["Party", "Language", "FileType"])[~ndcs.index.duplicated(keep='first')]
-
-
-ndcs["Kind"] = ndcs["Number"] + " NDC"
+    ["Party", "Language", "FileType", "Number"])[~ndcs.index.duplicated(keep='first')]
 
 # Convert to full date for joining with INDC table.
 ndcs.SubmissionDate = pd.to_datetime(ndcs.SubmissionDate)
