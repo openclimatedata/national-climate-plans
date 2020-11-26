@@ -1,6 +1,8 @@
 [submodule "cache/ndcs"]
 	path = cache/ndcs
 	url = https://github.com/openclimatedata/ndcs
+	branch = main
 [submodule "cache/indcs"]
 	path = cache/indcs
 	url = https://github.com/openclimatedata/indcs
+	branch = master

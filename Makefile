@@ -1,5 +1,5 @@
 all: venv
-	@git submodule foreach git pull origin master
+	@git submodule foreach git pull origin
 	@git pull
 	./venv/bin/python scripts/process.py
 	@git diff data
