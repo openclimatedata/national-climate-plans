@@ -38,7 +38,8 @@ ndcs = ndcs.drop(eu)
 
 # Give preference to English version if available.
 ndcs = ndcs.sort_values(
-    ["Party", "Language", "FileType", "Number"])[~ndcs.index.duplicated(keep='first')]
+    ["Party", "Language", "FileType", "Number", "SubmissionDate"],
+    ascending=[True, True, True, True, False])[~ndcs.index.duplicated(keep='first')]
 
 # Convert to full date for joining with INDC table.
 ndcs.SubmissionDate = pd.to_datetime(ndcs.SubmissionDate)
