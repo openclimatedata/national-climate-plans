@@ -1,7 +1,8 @@
 # ARCHIVED
 
 This repository is no longer updated. Please use the
-[NDC](https://github.com/openclimatedata/ndcs) directly.
+[NDC](https://github.com/openclimatedata/ndcs) repository for a CSV file of
+NDCS directly.
 
 Data Package with National Climate Plans from Nationally Determined Contributions (NDCs) and Intended Nationally Determined Contributions (INDCs) as provided in the UNFCCC secreteriat's registries.
 Contains only the main document using an English version if multiple are available.
